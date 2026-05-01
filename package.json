@@ -1,0 +1,33 @@
+{
+  "name": "velquiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.18.2"
+  }
+}
+import nltk
+from nltk.tag import hmm
+from nltk.corpus import treebank
+
+nltk.download('treebank')
+nltk.download('punkt')
+
+trainer = hmm.HiddenMarkovModelTrainer()
+tagger = trainer.train(treebank.tagged_sents()[:2000])
+
+sentence = "Pavan is learning NLP"
+words = nltk.word_tokenize(sentence)
+
+print(tagger.tag(words))

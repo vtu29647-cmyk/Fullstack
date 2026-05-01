@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VTU_QUIZ - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>VTU_QUIZ</h2>
+  <div class="user-section">
+    <span id="welcomeUser"></span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="home-container">
+  <h1 class="home-title">Select a Subject</h1>
+
+  <div class="card-grid">
+
+    <!-- Frontend -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript</p>
+      <button onclick="startSubject(1,'Frontend')">Start Quiz</button>
+    </div>
+
+    <!-- Backend -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png">
+      <h3>Backend</h3>
+      <p>Node.js, Express, APIs</p>
+      <button onclick="startSubject(2,'Backend')">Start Quiz</button>
+    </div>
+
+    <!-- Java -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+      <h3>Java</h3>
+      <p>OOP, JVM, Collections</p>
+      <button onclick="startSubject(3,'Java')">Start Quiz</button>
+    </div>
+
+    <!-- Python -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+      <h3>Python</h3>
+      <p>Functions, OOP, Django</p>
+      <button onclick="startSubject(4,'Python')">Start Quiz</button>
+    </div>
+
+    <!-- C Programming -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png">
+      <h3>C Programming</h3>
+      <p>Pointers, Structures, Arrays</p>
+      <button onclick="startSubject(5,'C Programming')">Start Quiz</button>
+    </div>
+
+    <!-- Data Structures -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png">
+      <h3>Data Structures</h3>
+      <p>Stack, Queue, Trees</p>
+      <button onclick="startSubject(6,'Data Structures')">Start Quiz</button>
+    </div>
+
+    <!-- DBMS -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png">
+      <h3>DBMS</h3>
+      <p>SQL, Normalization</p>
+      <button onclick="startSubject(7,'DBMS')">Start Quiz</button>
+    </div>
+
+    <!-- Operating Systems -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721264.png">
+      <h3>Operating Systems</h3>
+      <p>Processes, Memory</p>
+      <button onclick="startSubject(8,'Operating Systems')">Start Quiz</button>
+    </div>
+
+    <!-- Computer Networks -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4149/4149645.png">
+      <h3>Computer Networks</h3>
+      <p>OSI, TCP/IP</p>
+      <button onclick="startSubject(9,'Computer Networks')">Start Quiz</button>
+    </div>
+
+    <!-- Software Engineering -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721274.png">
+      <h3>Software Engineering</h3>
+      <p>SDLC, Agile</p>
+      <button onclick="startSubject(10,'Software Engineering')">Start Quiz</button>
+    </div>
+
+    <!-- Artificial Intelligence -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png">
+      <h3>Artificial Intelligence</h3>
+      <p>ML, Neural Networks</p>
+      <button onclick="startSubject(11,'Artificial Intelligence')">Start Quiz</button>
+    </div>
+
+    <!-- Cloud Computing -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4144/4144427.png">
+      <h3>Cloud Computing</h3>
+      <p>AWS, Azure</p>
+      <button onclick="startSubject(12,'Cloud Computing')">Start Quiz</button>
+    </div>
+
+    <!-- Cyber Security -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+      <h3>Cyber Security</h3>
+      <p>Encryption, Attacks</p>
+      <button onclick="startSubject(13,'Cyber Security')">Start Quiz</button>
+    </div>
+
+    <!-- Internet of Things -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4149/4149675.png">
+      <h3>Internet of Things</h3>
+      <p>Sensors, Smart Devices</p>
+      <button onclick="startSubject(14,'IoT')">Start Quiz</button>
+    </div>
+
+    <!-- Web Development -->
+    <div class="home-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+      <h3>Web Development</h3>
+      <p>Full Stack Development</p>
+      <button onclick="startSubject(15,'Web Development')">Start Quiz</button>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 VTU_QUIZ | Developed for Academic Purpose
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("welcomeUser").innerText =
+  "Welcome, " + localStorage.getItem("name");
+</script>
+
+</body>
+</html>

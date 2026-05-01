@@ -1,0 +1,281 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+}
+
+/* LOGIN */
+.main-bg{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+min-height:100vh;
+color:white;
+}
+.logo{
+width:90px;
+margin-bottom:10px;
+}
+
+.title{
+text-align:center;
+padding-top:40px;
+}
+
+.center-box{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100vh;
+}
+
+.card{
+background:white;
+color:black;
+padding:40px;
+border-radius:15px;
+width:350px;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 20px;
+background:#1e3c72;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* HOME */
+.home-bg{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+min-height:100vh;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+background:rgba(0,0,0,0.2);
+}
+
+.user-section{
+display:flex;
+gap:15px;
+align-items:center;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(2, 250px);
+gap:30px;
+justify-content:center;
+margin-top:40px;
+}
+
+.home-card{
+background:white;
+color:black;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.home-card:hover{
+transform:translateY(-10px);
+}
+
+/* ================= QUIZ PAGE ================= */
+
+.quiz-bg{
+  background:linear-gradient(135deg,#141e30,#243b55);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial, sans-serif;
+}
+
+.quiz-card{
+  background:white;
+  width:650px;
+  padding:40px;
+  border-radius:18px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.4);
+  text-align:center;
+  min-height:420px;   /* Prevent resizing */
+}
+
+.quiz-top{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.progress{
+  background:#2a5298;
+  color:white;
+  padding:8px 15px;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+.timer{
+  background:#dc3545;
+  color:white;
+  padding:8px 15px;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+.question-text{
+  margin:25px 0;
+  font-size:22px;
+  color:#333;
+}
+
+/* OPTION BUTTONS */
+.options button{
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+  border:none;
+  border-radius:10px;
+  background:#f1f3f6;
+  color:#333;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.options button:hover{
+  background:#2a5298;
+  color:white;
+}
+
+.selected{
+  background:#2a5298 !important;
+  color:white !important;
+}
+
+/* NEXT BUTTON */
+.next-btn{
+  margin-top:20px;
+  padding:14px;
+  width:100%;
+  border-radius:10px;
+  background:#2c5364;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* Hidden but keeps space */
+.hidden{
+  visibility:hidden;
+}
+/* ================= NEW HOME DESIGN ================= */
+
+.home-bg{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  min-height:100vh;
+  color:white;
+  display:flex;
+  flex-direction:column;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.3);
+}
+
+.user-section{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.user-section button{
+  background:#ff4b2b;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  color:white;
+}
+
+/* MAIN CONTENT */
+.home-container{
+  flex:1;
+  text-align:center;
+  padding-top:40px;
+}
+
+.home-title{
+  margin-bottom:40px;
+  font-size:28px;
+}
+
+/* CARD GRID */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 280px);
+  gap:40px;
+  justify-content:center;
+}
+
+/* CARD STYLE */
+.home-card{
+  background:white;
+  color:black;
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.home-card img{
+  width:60px;
+  margin-bottom:15px;
+}
+
+.home-card:hover{
+  transform:translateY(-10px);
+}
+
+.home-card button{
+  margin-top:15px;
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#2c5364;
+  color:white;
+  cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  font-size:14px;
+}
